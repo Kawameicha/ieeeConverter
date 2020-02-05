@@ -5,3 +5,7 @@ ieee_float_to_hex <- function(f) {
     .Call(`_ieeeConverter_ieee_float_to_hex`, f)
 }
 
+ieee_float_to_bit <- function(f) {
+    .Call(`_ieeeConverter_ieee_float_to_bit`, f)
+}
+

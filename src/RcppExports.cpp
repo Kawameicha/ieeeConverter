@@ -16,9 +16,21 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// ieee_float_to_bit
+std::string ieee_float_to_bit(float f);
+RcppExport SEXP _ieeeConverter_ieee_float_to_bit(SEXP fSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< float >::type f(fSEXP);
+    rcpp_result_gen = Rcpp::wrap(ieee_float_to_bit(f));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_ieeeConverter_ieee_float_to_hex", (DL_FUNC) &_ieeeConverter_ieee_float_to_hex, 1},
+    {"_ieeeConverter_ieee_float_to_bit", (DL_FUNC) &_ieeeConverter_ieee_float_to_bit, 1},
     {NULL, NULL, 0}
 };
 
