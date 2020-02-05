@@ -1,0 +1,17 @@
+Package: ieeeConverter
+Type: Package
+Title: Tools to Convert IEEE-754 Floating Point Numbers to Hexadecimal and Binary Representations
+Version: 0.1.0
+Authors@R: person("Christoph", "Freier", , "christoph@freier.fr", c("aut", "cre"))
+Description: This package contains tools to convert IEEE-754
+    floating point numbers to hexadecimal and binary
+    representations. This is the format in which almost all
+    CPUs represent non-integer numbers.
+Depends:
+    R (>= 3.2)
+License: Apache License 2.0 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.3)
+LinkingTo: Rcpp
+RoxygenNote: 7.0.2
